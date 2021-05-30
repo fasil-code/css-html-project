@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>environment .html</title>
+</head>
+<link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+
+
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+
+    }
+
+    #logo {
+        margin: 10px, 2px;
+        margin-top: 10px;
+
+        margin-right: 20px;
+        padding: 3px, 2px;
+
+
+    }
+
+    #logo img {
+        height: 60px;
+        border-radius: 12px;
+        background-color: rgb(139, 132, 127);
+        padding-left: 8px;
+
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        font-weight: bold;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px;
+        padding-right: 40px;
+        padding-left: 10px;
+        margin-top: 5px;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    ul li a:hover {
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+
+    }
+
+    .nav::before {
+
+        content: "";
+        background-color: black;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        left: 0%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .main {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: black;
+        font-weight: bold;
+        padding: 12px;
+        font-family: 'Baloo Bai', cursive;
+        height: 500px;
+
+    }
+
+    .main::before {
+        content: "";
+        background-image: url('name.jpg');
+        height: 524px;
+        width: 100%;
+        margin-top: 0;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+        border: 2px solid red;
+    }
+
+    .btn {
+        padding: 40px, 100px;
+        background-color: coral;
+        color: white;
+        border: 2px solid white;
+        width: 500px;
+
+        font-family: 'Baloo Bai', cursive;
+        border-radius: 12px;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+
+
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+        border: 2px solid black;
+    }
+
+    .mid {
+        border: 2px solid red;
+    }
+
+    .services-container {
+        background-color: rgb(222, 236, 228);
+    }
+
+    #services {
+        margin: 34px;
+        display: flex;
+
+
+    }
+
+    .box {
+        font-family: 'Baloo Bai', cursive;
+
+        height: 200px;
+        width: 33%;
+        margin: 3px;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+
+
+    }
+
+    .h-pimary {
+        font-family: 'Baloo Bai', cursive;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .box h3 {
+        font-weight: bolder;
+        font-size: 26px;
+
+    }
+
+
+    .clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .citem {
+        margin: 3px;
+    }
+
+    .clients img {
+        height: 200px;
+    }
+
+    .client-section {
+        background-color: rgb(222, 236, 228);
+    }
+    #pop{
+        width:630px;
+        align-self: center;
+    }
+    .form{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        align-items: center;
+    }
+
+    .form::before{
+        content: "";
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        z-index: -1;
+        opacity: 0.6;
+        background-image:url(' ping.jpg');
+        
+    }
+    .center{
+    
+                text-align: center;
+        background-color: black;
+        color: blanchedalmond;
+
+    }
+
+    .form-group input{
+    
+        width:600px;
+        height:30px;
+        margin:2px;
+        padding :10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .form-group input:hover{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: blanchedalmond;
+        background-color: black;
+
+    }
+</style>
+
+<body>
+
+    <header class="nav">
+        <div id="logo">
+            <img src="fasil2.jpg">
+        </div>
+        <div class="navb">
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#services-container">Services</a></li>
+                <li class="item"><a href="#members-section">Membership</a></li>
+                <li class="item"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <h2>
+            Welcome To SaveNature
+        </h2>
+        <p>
+            ...At least don't ruin the Life of Flora and Fauna, depending on whom we live.
+            Lets prove that we are Humans...
+        </p>
+        <button class="btn">Join Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-pimary">
+            Participation Feilds
+        </h1>
+        <div id="services">
+            <div class="box">
+                <h3>
+                    <div class="h-pimary">
+                    </div>Natural Resources...
+                </h3>
+                Natural Resouces are a vital part of life.The water ,the fresh air ,the marine,the natural being 
+                of environment are in danger.Join this protocol and expolore diffrent places and species
+                Design and Prepose a method to conserve them...  
+
+            </div>
+            <div class="box">
+                <h3>Flora Life</h3>
+            Flora refers to plant diversity of an area.Trees ,Plants,shrubs are the Natural source 
+            of oxygen and frsh air.Trees have been indiscrimantely downed for woods and satisfy human luxieris
+            Join this protocol to conserve the plant life of the World and their vivid Nature...
+
+            </div>
+            <div class="box">
+                <h3>Fauna Life</h3>
+                Fauna refers to the Animal diversity of an area.It includes all the animals ,insects,bird species as well 
+                as microorganisms. Conserving Fauna is essential step to maintain Stability of Food Chain and Food
+                Web Chain.Join this Protocol to experience diverse Animal Environment...
+
+            </div>
+        </div>
+    </section>
+    <section class="client-section">
+        <h1 class="h-pimary">
+            Our Partners
+        </h1>
+        <div class="clients">
+            <div class="citem">
+                <img src="everg.jpg" alt="our clients">
+            </div>
+            <div class="citem">
+                <img src="sahil.jpg" alt="our clients">
+            </div>
+            <div class="citem">
+                <img src="hoy.jpg" alt="our clients">
+            </div>
+            <div class="citem">
+                <img src="images.png" alt="our clients">
+            </div>
+            <div class="citem">
+                <img src="miz.jpg" alt="our clients">
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <h1 class="h-pimary">Contact Us</h1>
+<div class="forme" >
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn" id=pop>Submit</button>
+    </form>
+</div>
+    </section>
+    <footer>
+<div class="center">
+Copyright &copy;All rights reserved.
+</div>
+    </footer>
+</body>
+
+</html>
